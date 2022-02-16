@@ -1,4 +1,5 @@
 const querystring = require('querystring');
+const { handleBlogRouter } = require('./src/router/blog');
 
 const serverHandler = (req, res) => {
 	const method = req.method;
@@ -17,7 +18,7 @@ const serverHandler = (req, res) => {
 	};
 
 	if (method === 'GET') {
-		res.end(JSON.stringify(resData));
+		res.end(JSON.stringify(handleBlogRouter(req, res)));
 	}
 
 	if (method === 'POST') {
