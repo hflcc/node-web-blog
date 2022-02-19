@@ -3,14 +3,15 @@
  */
 const handleUserRouter = (req, res) => {
 	const method = req.method.toLowerCase();
+	const path = req.path;
 
-	if (method === 'get' && req.path === '/api/blog/user') {
+	if (method === 'get' && path === '/api/blog/user') {
 		return {
 			msg: '这是获取用户信息接口'
 		};
 	}
 
-	if (method === 'post' && req.path === '/api/blog/login') {
+	if (method === 'post' && path === '/api/blog/login') {
 		return {
 			msg: '这是博客登录接口'
 		};
