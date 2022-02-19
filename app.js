@@ -8,6 +8,8 @@ const serverHandler = (req, res) => {
 	const url = req.url;
 	req.path = url.split('?')[0] || '';
 
+	req.query = querystring.parse(url.split('?')[1]);
+
 	// 命中用户信息路由
 	const userInfo = handleUserRouter(req, res);
 	if (userInfo) {

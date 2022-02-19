@@ -1,6 +1,6 @@
-/**
- * Created by mac on 2022-02-16 23:35
- */
+const { SuccessModel, ErrorModel } = require('../model/resModel');
+
+
 const handleUserRouter = (req, res) => {
 	const method = req.method.toLowerCase();
 	const path = req.path;
