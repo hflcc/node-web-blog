@@ -2,7 +2,7 @@ const { SuccessModel, ErrorModel } = require('../model/resModel');
 
 
 const handleUserRouter = (req, res) => {
-	const method = req.method.toLowerCase();
+	const method = req.method;
 	const path = req.path;
 
 	if (method === 'get' && path === '/api/blog/user') {
