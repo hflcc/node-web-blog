@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="">
+    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="feat: 新增修改博客接口">
+      <change afterPath="$PROJECT_DIR$/src/controller/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/user.js" afterDir="false" />
@@ -69,7 +68,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="Docker" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -103,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645023625714</updated>
       <workItem from="1645023628085" duration="685000" />
-      <workItem from="1645024325911" duration="12136000" />
+      <workItem from="1645024325911" duration="16670000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -147,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645285950216</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: 新增修改博客接口">
+      <created>1645340218900</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645340218900</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +169,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="新增博客路由处理接口" />
     <MESSAGE value="feat: 新增controller和接口处理model" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增controller和接口处理model" />
+    <MESSAGE value="feat: 新增修改博客接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增修改博客接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

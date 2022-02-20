@@ -40,7 +40,14 @@ const newBlog = (blogData = {}) => {
  * @param blogData {Object} 需要更新的博客内容json
  * */
 const updateBlog = (id, blogData = {}) => {
-	console.log(id, blogData);
+	return true;
+};
+
+/**
+ * @info 根据id删除博客
+ * @param id {String} 博客标识id
+ * */
+const delBlog = (id) => {
 	return true;
 };
 
@@ -48,5 +55,6 @@ module.exports = {
 	getBlogList,
 	getBlogDetail,
 	newBlog,
-	updateBlog
+	updateBlog,
+	delBlog
 };

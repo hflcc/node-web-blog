@@ -1,4 +1,5 @@
 const { SuccessModel, ErrorModel } = require('../model/resModel');
+const { login } = require('../controller/user');
 
 
 const handleUserRouter = (req, res) => {
@@ -12,9 +13,12 @@ const handleUserRouter = (req, res) => {
 	}
 
 	if (method === 'post' && path === '/api/blog/login') {
-		return {
-			msg: '这是博客登录接口'
-		};
+		const { username, password } = req.body;
+		const res = login(username, password);
+		if (res) {
+			return new SuccessModel(true, '登录成功');
+		}
+		return new ErrorModel(false, '账号或密码错误');
 	}
 };
 
