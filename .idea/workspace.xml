@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="feat: 新增用户登录接口">
-      <change afterPath="$PROJECT_DIR$/testFile/blogs.sql" afterDir="false" />
+    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/testFile/connectSql.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,7 @@
       <updated>1645023625714</updated>
       <workItem from="1645023628085" duration="685000" />
       <workItem from="1645024325911" duration="18947000" />
-      <workItem from="1645930560521" duration="623000" />
+      <workItem from="1645930560521" duration="5081000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -158,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645369541529</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: 新增博客sql操作语句--备忘">
+      <created>1645931427809</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1645931427809</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +182,8 @@
     <MESSAGE value="feat: 新增controller和接口处理model" />
     <MESSAGE value="feat: 新增修改博客接口" />
     <MESSAGE value="feat: 新增用户登录接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增用户登录接口" />
+    <MESSAGE value="feat: 新增博客sql操作语句--备忘" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增博客sql操作语句--备忘" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
