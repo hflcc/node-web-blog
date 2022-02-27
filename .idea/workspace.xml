@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="feat: 新增修改博客接口">
-      <change afterPath="$PROJECT_DIR$/src/controller/user.js" afterDir="false" />
+    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="feat: 新增用户登录接口">
+      <change afterPath="$PROJECT_DIR$/testFile/blogs.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,8 @@
       <option name="presentableId" value="Default" />
       <updated>1645023625714</updated>
       <workItem from="1645023628085" duration="685000" />
-      <workItem from="1645024325911" duration="16670000" />
+      <workItem from="1645024325911" duration="18947000" />
+      <workItem from="1645930560521" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -153,14 +151,18 @@
       <option name="project" value="LOCAL" />
       <updated>1645340218900</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: 新增用户登录接口">
+      <created>1645369541529</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1645369541529</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -170,7 +172,8 @@
     <MESSAGE value="新增博客路由处理接口" />
     <MESSAGE value="feat: 新增controller和接口处理model" />
     <MESSAGE value="feat: 新增修改博客接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增修改博客接口" />
+    <MESSAGE value="feat: 新增用户登录接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增用户登录接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -178,13 +181,11 @@
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
           <line>42</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
           <line>7</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
