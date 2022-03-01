@@ -39,18 +39,18 @@ const serverHandler = async (req, res) => {
 
 	req.query = querystring.parse(url.split('?')[1]);
 
-	getPostData(req).then(postData => {
+	getPostData(req).then(async postData => {
 		req.body = postData;
 
 		// 命中用户信息路由
-		const userInfo = handleUserRouter(req, res);
+		const userInfo = await handleUserRouter(req, res);
 		if (userInfo) {
 			res.end(JSON.stringify(userInfo));
 			return;
 		}
 
 		// 命中博客信息路由
-		const blogInfo = handleBlogRouter(req, res);
+		const blogInfo = await handleBlogRouter(req, res);
 		if (blogInfo) {
 			res.end(JSON.stringify(blogInfo));
 			return;

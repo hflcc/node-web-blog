@@ -1,19 +1,16 @@
+const { exec } = require('../db/mysql');
+
 // 获取博客列表数据
 const getBlogList = (author, keyword) => {
-	return [
-		{
-			id: 1,
-			author: 'zhangsan',
-			createdTime: 1645285273542,
-			content: '咱三出去吃饭'
-		},
-		{
-			id: 2,
-			author: '李四',
-			createdTime: 1645285311390,
-			content: '下午出去打球吗'
-		},
-	];
+	let sql = 'select * from blogs where 1=1 ';
+	if (author) {
+		sql += `and author='${author}'`;
+	}
+	if (keyword) {
+		sql += `and title like '%${keyword}%'`;
+	}
+	sql += 'order by createtime desc';
+	return exec(sql);
 };
 
 // 根据id获取博客详情

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="feat: 新增博客sql操作语句test">
-      <change afterPath="$PROJECT_DIR$/src/conf/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/mysql.js" afterDir="false" />
+    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="feat: 新增mysql配置文件以及封装执行方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/blog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +103,8 @@
       <workItem from="1645023628085" duration="685000" />
       <workItem from="1645024325911" duration="18947000" />
       <workItem from="1645930560521" duration="5782000" />
-      <workItem from="1645972031744" duration="1766000" />
+      <workItem from="1645972031744" duration="2068000" />
+      <workItem from="1646142331722" duration="5717000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -174,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645948590367</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: 新增mysql配置文件以及封装执行方法">
+      <created>1645976303046</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1645976303046</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,23 +200,8 @@
     <MESSAGE value="feat: 新增用户登录接口" />
     <MESSAGE value="feat: 新增博客sql操作语句--备忘" />
     <MESSAGE value="feat: 新增博客sql操作语句test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增博客sql操作语句test" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>7</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="feat: 新增mysql配置文件以及封装执行方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增mysql配置文件以及封装执行方法" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
