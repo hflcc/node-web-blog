@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
-    "rxjs": "^7.5.4"
+    "rxjs": "^7.5.4",
+    "sqlstring": "^2.3.3"
   },
   "devDependencies": {
     "@types/node": "^17.0.18",

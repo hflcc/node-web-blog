@@ -1,10 +1,10 @@
 const { exec } = require('../db/mysql');
+const sqlString = require('sqlstring');
 
-const login = (username, password) => {
-	if (username === 'zhangsan' && password === '123') {
-		return true;
-	}
-	return false;
+const login = async (username, password) => {
+	let sql = `select * from users where username='${username}' and password='${password}'`;
+	const res = await exec(sql);
+	return !!(res && res[0]);
 };
 
 // 获取用户信息

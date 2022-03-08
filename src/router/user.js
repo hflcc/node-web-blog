@@ -19,7 +19,7 @@ const handleUserRouter = async (req, res) => {
 
 	if (method === 'post' && path === '/api/blog/login') {
 		const { username, password } = req.body;
-		const res = login(username, password);
+		const res = await login(username, password);
 		if (res) {
 			return new SuccessModel(true, '登录成功');
 		}

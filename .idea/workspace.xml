@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="feat: 新增查询用户信息接口">
+    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="feat: 博客ID">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +106,7 @@
       <workItem from="1645930560521" duration="5782000" />
       <workItem from="1645972031744" duration="2068000" />
       <workItem from="1646142331722" duration="5920000" />
-      <workItem from="1646746020730" duration="2546000" />
+      <workItem from="1646746020730" duration="4403000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -211,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646748860648</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: 博客ID">
+      <created>1646749181669</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1646749181669</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +241,8 @@
     <MESSAGE value="feat: 新增查询博客列表controller" />
     <MESSAGE value="feat: 修改resModel业务码字段改成code" />
     <MESSAGE value="feat: 新增查询用户信息接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增查询用户信息接口" />
+    <MESSAGE value="feat: 博客ID" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 博客ID" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
