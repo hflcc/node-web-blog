@@ -15,12 +15,8 @@ const getBlogList = (author, keyword) => {
 
 // 根据id获取博客详情
 const getBlogDetail = (id) => {
-	return {
-		id,
-		title: '博客标题',
-		subtitle: '博客副标题',
-		content: '博客内容体'
-	};
+	let sql = `select * from blogs where id='${id}'`;
+	return exec(sql);
 };
 
 // 根据post body中的请求体参数新建博客

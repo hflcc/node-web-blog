@@ -16,8 +16,11 @@ const handleBlogRouter = async (req, res) => {
 	}
 	// 获取博客详情
 	if (method === 'get' && path === '/api/blog/detail') {
-		const data = getBlogDetail(id);
-		return new SuccessModel(data);
+		if (!id) return new ErrorModel({}, '微博ID不能为空');
+		const data = await getBlogDetail(id);
+		if (data) {
+			return new SuccessModel(data, '查询成功');
+		}
 	}
 	// 新建博客
 	if (method === 'post' && path === '/api/blog/new') {
