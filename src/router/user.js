@@ -12,7 +12,8 @@ const handleUserRouter = async (req, res) => {
 		if (!id) return new ErrorModel([], '查询id不能为空');
 		const res = await getUserInfo(id);
 		if (res) {
-			return new SuccessModel(res, '查询用户成功');
+			const obj = res[0] || {};
+			return new SuccessModel(obj, '查询成功');
 		}
 	}
 
