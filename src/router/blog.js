@@ -24,8 +24,11 @@ const handleBlogRouter = async (req, res) => {
 	}
 	// 新建博客
 	if (method === 'post' && path === '/api/blog/new') {
-		const data = newBlog(req.body);
-		return new SuccessModel(data, '新建成功');
+		req.body.author = '王麻子';
+		const data = await newBlog(req.body);
+		if(data) {
+			return new SuccessModel({ id: data.insertId }, '新增博客成功');
+		}
 	}
 	// 更新博客
 	if (method === 'post' && path === '/api/blog/update') {

@@ -1,13 +1,15 @@
 const { exec } = require('../db/mysql');
+const sqlString = require('sqlstring');
+const escape = str => sqlString.escape(str);
 
 // 获取博客列表数据
 const getBlogList = (author, keyword) => {
 	let sql = 'select * from blogs where 1=1 ';
 	if (author) {
-		sql += `and author='${author}'`;
+		sql += `and author=${escape(author)} `;
 	}
 	if (keyword) {
-		sql += `and title like '%${keyword}%'`;
+		sql += `and title like '%${keyword}%' `;
 	}
 	sql += 'order by createtime desc';
 	return exec(sql);
@@ -15,16 +17,16 @@ const getBlogList = (author, keyword) => {
 
 // 根据id获取博客详情
 const getBlogDetail = (id) => {
-	let sql = `select * from blogs where id='${id}'`;
+	let sql = `select * from blogs where id=${escape(id)}`;
 	return exec(sql);
 };
 
 // 根据post body中的请求体参数新建博客
 const newBlog = (blogData = {}) => {
-	return {
-		id: 3,
-		...blogData
-	};
+	const {title, content, author} = blogData;
+	const timestamp = Date.now();
+	let sql = `insert into blogs (author, title, content, createtime) values (${escape(author)}, ${escape(title)}, ${escape(content)}, ${timestamp})`;
+	return exec(sql);
 };
 
 /**
