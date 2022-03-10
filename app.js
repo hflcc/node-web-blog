@@ -56,6 +56,7 @@ const serverHandler = async (req, res) => {
 			return;
 		}
 
+		// 没有命中任何路由时,返回404状态码
 		res.writeHead(404, { 'Content-type': 'text/plain' });
 		res.write('404 not found');
 		res.end();
