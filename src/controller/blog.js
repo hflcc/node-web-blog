@@ -35,15 +35,25 @@ const newBlog = (blogData = {}) => {
  * @param blogData {Object} 需要更新的博客内容json
  * */
 const updateBlog = (id, blogData = {}) => {
-	return true;
+	const { title, content } = blogData;
+	const timeStamp = Date.now();
+	let sql = `update blogs set title='${title}', content='${content}', createtime='${timeStamp}' where id=${id}`;
+	return exec(sql).then(res => {
+		return res.affectedRows > 0;
+	});
 };
 
 /**
- * @info 根据id删除博客
+ * @info 根据id删除博客 软删除
  * @param id {String} 博客标识id
  * */
 const delBlog = (id) => {
-	return true;
+	let sql = `update blogs set state=0 where id=${id}`;
+	return exec(sql).then(res => {
+		return res.affectedRows > 0;
+	}).catch(() => {
+		return false;
+	});
 };
 
 module.exports = {

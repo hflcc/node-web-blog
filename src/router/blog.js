@@ -32,7 +32,7 @@ const handleBlogRouter = async (req, res) => {
 	}
 	// 更新博客
 	if (method === 'post' && path === '/api/blog/update') {
-		const res = updateBlog(id, req.body);
+		const res = await updateBlog(id, req.body);
 		if (res) {
 			return new SuccessModel(res, '更新成功');
 		}
@@ -40,8 +40,11 @@ const handleBlogRouter = async (req, res) => {
 	}
 	// 删除博客
 	if (method === 'post' && path === '/api/blog/del') {
-		const data = delBlog(id);
-		return new SuccessModel(data, '删除成功');
+		const res = await delBlog(id);
+		if (res) {
+			return new SuccessModel(true, '删除成功');
+		}
+		return new ErrorModel(false, '删除失败');
 	}
 };
 
