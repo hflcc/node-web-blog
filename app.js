@@ -37,7 +37,19 @@ const serverHandler = async (req, res) => {
 	const url = req.url;
 	req.path = url.split('?')[0] || '';
 
+	// 解析query参数
 	req.query = querystring.parse(url.split('?')[1]);
+
+	// 解析cookie
+	req.cookie = {};
+	const cookieStr = req.headers.cookie || '';
+	cookieStr.split(';').forEach(item => {
+		if (!item) return;
+		const arr = item.split('=');
+		const key = arr[0];
+		req.cookie[key] = arr[1];
+	});
+	console.log(req.cookie, 'cookie');
 
 	getPostData(req).then(async postData => {
 		req.body = postData;
