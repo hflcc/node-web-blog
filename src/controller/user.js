@@ -1,8 +1,7 @@
 const { exec } = require('../db/mysql');
-const sqlString = require('sqlstring');
 
 const login = async (username, password) => {
-	let sql = `select * from users where username='${username}' and password='${password}'`;
+	let sql = `select username,realname from users where username='${username}' and password='${password}'`;
 	const res = await exec(sql);
 	return !!(res && res[0]);
 };
