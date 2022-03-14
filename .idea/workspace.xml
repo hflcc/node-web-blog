@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/study-mark.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
@@ -106,7 +105,7 @@
       <workItem from="1646142331722" duration="5920000" />
       <workItem from="1646746020730" duration="8342000" />
       <workItem from="1646921298901" duration="3447000" />
-      <workItem from="1647095725360" duration="6104000" />
+      <workItem from="1647095725360" duration="6810000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -255,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647181680213</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: 新增cookie">
+      <created>1647185437741</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1647185437741</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +285,8 @@
     <MESSAGE value="feat: 博客ID" />
     <MESSAGE value="feat: 新增sqlstring" />
     <MESSAGE value="feat: 更新接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 更新接口" />
+    <MESSAGE value="feat: 新增cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增cookie" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

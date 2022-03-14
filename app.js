@@ -42,7 +42,7 @@ const serverHandler = async (req, res) => {
 
 	// 解析cookie
 	req.cookie = {};
-	const cookieStr = req.headers.cookie || '';
+	const cookieStr = req.headers?.cookie || '';
 	cookieStr.split(';').forEach(item => {
 		if (!item) return;
 		const arr = item.split('=');
