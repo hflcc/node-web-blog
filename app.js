@@ -1,4 +1,5 @@
 const querystring = require('querystring');
+const { createUuid } = require('./src/utils/tools');
 const { handleBlogRouter } = require('./src/router/blog');
 const { handleUserRouter } = require('./src/router/user');
 
@@ -71,7 +72,7 @@ const serverHandler = async (req, res) => {
 		}
 	} else {
 		needSetCookie = true;
-		userId = `${Date.now()}_${Math.random()}`;
+		userId = `${Date.now()}_${createUuid()}`;
 		SESSION_DATA[userId] = {};
 	}
 	req.session = SESSION_DATA[userId];
