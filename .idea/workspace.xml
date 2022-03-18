@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/src/utils/tools.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-mark.md" beforeDir="false" afterPath="$PROJECT_DIR$/study-mark.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +108,7 @@
       <workItem from="1646746020730" duration="8342000" />
       <workItem from="1646921298901" duration="3447000" />
       <workItem from="1647095725360" duration="6810000" />
-      <workItem from="1647503793854" duration="12542000" />
+      <workItem from="1647503793854" duration="12794000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>

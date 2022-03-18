@@ -9,6 +9,8 @@
 
 
 2.session
+* session解决了cookie存放用户信息容易暴露隐私
+* 实现session相当于用对象存储每个用户访问的key
 
 
 3.redis
