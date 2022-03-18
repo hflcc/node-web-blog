@@ -3,7 +3,13 @@ const { exec } = require('../db/mysql');
 const login = async (username, password) => {
 	let sql = `select username,realname from users where username='${username}' and password='${password}'`;
 	const res = await exec(sql);
-	return !!(res && res[0]);
+	if (res[0]) {
+		return {
+			username: res[0].username,
+			realname: res[0].realname
+		};
+	}
+	return false;
 };
 
 // 获取用户信息
