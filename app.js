@@ -2,6 +2,7 @@ const querystring = require('querystring');
 const { createUuid } = require('./src/utils/tools');
 const { handleBlogRouter } = require('./src/router/blog');
 const { handleUserRouter } = require('./src/router/user');
+const { redisGet, redisSet } = require('./src/db/redis');
 
 // 处理post请求
 const getPostData = (req) => {
@@ -31,9 +32,6 @@ const getPostData = (req) => {
 		}
 	});
 };
-
-// session数据 { [userId: string]: Object }
-const SESSION_DATA = {};
 
 // 获取cookie的过期时间
 const getCookieExpires = () => {
@@ -67,15 +65,18 @@ const serverHandler = async (req, res) => {
 	let needSetCookie = false;
 	let userId = req.cookie.userid;
 	if (userId) {
-		if (!SESSION_DATA[userId]) {
-			SESSION_DATA[userId] = {};
+		const result = await redisGet(userId);
+		if (!result) {
+			redisSet(userId, {});
 		}
 	} else {
 		needSetCookie = true;
 		userId = `${Date.now()}_${createUuid()}`;
-		SESSION_DATA[userId] = {};
+		redisSet(userId, {});
 	}
-	req.session = SESSION_DATA[userId];
+	const redisResult = await redisGet(userId);
+	req.userid = userId;
+	req.session = redisResult;
 	// 解析session end
 
 	// 因为post请求是用流接收,所以这里封装成promise

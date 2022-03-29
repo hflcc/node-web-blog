@@ -1,5 +1,6 @@
 const { SuccessModel, ErrorModel } = require('../model/resModel');
 const { login, getUserInfo } = require('../controller/user');
+const { redisSet } = require('../db/redis');
 
 const handleUserRouter = async (req, res) => {
 	const method = req.method;
@@ -20,8 +21,12 @@ const handleUserRouter = async (req, res) => {
 		const { username, password } = req.body;
 		return login(username, password).then(data => {
 			if (data.username) {
-				req.session.username = data.username;
-				req.session.realname = data.realname;
+				const obj = Object.assign({}, req.session, {
+					username: data.username,
+					realname: data.realname
+				});
+				redisSet(req.userid, obj);
+				req.session = obj;
 
 				return new SuccessModel(true, '登录成功');
 			}
