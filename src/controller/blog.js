@@ -46,9 +46,10 @@ const updateBlog = (id, blogData = {}) => {
 /**
  * @info 根据id删除博客 软删除
  * @param id {String} 博客标识id
+ * @param username {String} 用户名
  * */
-const delBlog = (id) => {
-	let sql = `update blogs set state=0 where id=${id}`;
+const delBlog = (id, username) => {
+	let sql = `update blogs set state=0 where id=${id} and author=${username + ''}`;
 	return exec(sql).then(res => {
 		return res.affectedRows > 0;
 	}).catch(() => {

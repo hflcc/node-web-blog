@@ -36,7 +36,7 @@ const getPostData = (req) => {
 const SESSION_DATA = {};
 
 // 获取cookie的过期时间
-const getCookirExpires = () => {
+const getCookieExpires = () => {
 	const d = new Date();
 	// 一天的过期时间
 	d.setTime(d.getTime() + 24 * 3600 * 1000);
@@ -87,7 +87,7 @@ const serverHandler = async (req, res) => {
 		if (userInfo) {
 			if (needSetCookie) {
 				// 设置cookie,并不能让客户端修改cookie
-				res.setHeader('Set-cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookirExpires()}`);
+				res.setHeader('Set-cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`);
 			}
 			res.end(JSON.stringify(userInfo));
 			return;
@@ -98,7 +98,7 @@ const serverHandler = async (req, res) => {
 		if (blogInfo) {
 			if (needSetCookie) {
 				// 设置cookie,并不能让客户端修改cookie
-				res.setHeader('Set-cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookirExpires()}`);
+				res.setHeader('Set-cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`);
 			}
 			res.end(JSON.stringify(blogInfo));
 			return;
