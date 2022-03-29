@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
-    "rxjs": "^7.5.4"
+    "sqlstring": "^2.3.3"
   },
   "devDependencies": {
     "@types/node": "^17.0.18",
@@ -21,6 +21,7 @@
     "eslint-config-prettier": "^8.3.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.15",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "redis": "^2.8.0"
   }
 }

@@ -1,6 +1,13 @@
 const { SuccessModel, ErrorModel } = require('../model/resModel');
 const { getBlogList, getBlogDetail, newBlog, updateBlog, delBlog } = require('../controller/blog');
 
+// 统一的登录验证函数
+const loginCheck = (req) => {
+	if (!req.session.username) {
+		return Promise.resolve(new ErrorModel(false, '尚未登录'));
+	}
+};
+
 const handleBlogRouter = async (req, res) => {
 	const method = req.method;
 	const path = req.path;
@@ -16,17 +23,35 @@ const handleBlogRouter = async (req, res) => {
 	}
 	// 获取博客详情
 	if (method === 'get' && path === '/api/blog/detail') {
-		const data = getBlogDetail(id);
-		return new SuccessModel(data);
+		if (!id) return new ErrorModel({}, '微博ID不能为空');
+		const data = await getBlogDetail(id);
+		if (data) {
+			return new SuccessModel(data, '查询成功');
+		}
 	}
 	// 新建博客
 	if (method === 'post' && path === '/api/blog/new') {
-		const data = newBlog(req.body);
-		return new SuccessModel(data, '新建成功');
+		// 校验有无登录
+		const loginCheckResult = loginCheck(req);
+		if (loginCheckResult) {
+			return loginCheckResult;
+		}
+
+		req.body.author = req.session.username;
+
+		const data = await newBlog(req.body);
+		if(data) {
+			return new SuccessModel({ id: data.insertId }, '新增博客成功');
+		}
 	}
 	// 更新博客
 	if (method === 'post' && path === '/api/blog/update') {
-		const res = updateBlog(id, req.body);
+		// 校验有无登录
+		const loginCheckResult = loginCheck(req);
+		if (loginCheckResult) {
+			return loginCheckResult;
+		}
+		const res = await updateBlog(id, req.body);
 		if (res) {
 			return new SuccessModel(res, '更新成功');
 		}
@@ -34,8 +59,16 @@ const handleBlogRouter = async (req, res) => {
 	}
 	// 删除博客
 	if (method === 'post' && path === '/api/blog/del') {
-		const data = delBlog(id);
-		return new SuccessModel(data, '删除成功');
+		// 校验有无登录
+		const loginCheckResult = loginCheck(req);
+		if (loginCheckResult) {
+			return loginCheckResult;
+		}
+		const res = await delBlog(id, req.session.username);
+		if (res) {
+			return new SuccessModel(true, '删除成功');
+		}
+		return new ErrorModel(false, '删除失败');
 	}
 };
 

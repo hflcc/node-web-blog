@@ -1,13 +1,15 @@
 const { exec } = require('../db/mysql');
+const sqlString = require('sqlstring');
+const escape = str => sqlString.escape(str);
 
 // 获取博客列表数据
 const getBlogList = (author, keyword) => {
 	let sql = 'select * from blogs where 1=1 ';
 	if (author) {
-		sql += `and author='${author}'`;
+		sql += `and author=${escape(author)} `;
 	}
 	if (keyword) {
-		sql += `and title like '%${keyword}%'`;
+		sql += `and title like '%${keyword}%' `;
 	}
 	sql += 'order by createtime desc';
 	return exec(sql);
@@ -15,20 +17,16 @@ const getBlogList = (author, keyword) => {
 
 // 根据id获取博客详情
 const getBlogDetail = (id) => {
-	return {
-		id,
-		title: '博客标题',
-		subtitle: '博客副标题',
-		content: '博客内容体'
-	};
+	let sql = `select * from blogs where id=${escape(id)}`;
+	return exec(sql);
 };
 
 // 根据post body中的请求体参数新建博客
 const newBlog = (blogData = {}) => {
-	return {
-		id: 3,
-		...blogData
-	};
+	const {title, content, author} = blogData;
+	const timestamp = Date.now();
+	let sql = `insert into blogs (author, title, content, createtime) values (${escape(author)}, ${escape(title)}, ${escape(content)}, ${timestamp})`;
+	return exec(sql);
 };
 
 /**
@@ -37,15 +35,26 @@ const newBlog = (blogData = {}) => {
  * @param blogData {Object} 需要更新的博客内容json
  * */
 const updateBlog = (id, blogData = {}) => {
-	return true;
+	const { title, content } = blogData;
+	const timeStamp = Date.now();
+	let sql = `update blogs set title='${title}', content='${content}', createtime='${timeStamp}' where id=${id}`;
+	return exec(sql).then(res => {
+		return res.affectedRows > 0;
+	});
 };
 
 /**
- * @info 根据id删除博客
+ * @info 根据id删除博客 软删除
  * @param id {String} 博客标识id
+ * @param username {String} 用户名
  * */
-const delBlog = (id) => {
-	return true;
+const delBlog = (id, username) => {
+	let sql = `update blogs set state=0 where id=${id} and author=${username + ''}`;
+	return exec(sql).then(res => {
+		return res.affectedRows > 0;
+	}).catch(() => {
+		return false;
+	});
 };
 
 module.exports = {
