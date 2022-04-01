@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="">
+    <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="feat: 新增mysql防止sql注入安全 escape">
+      <change afterPath="$PROJECT_DIR$/src/utils/cryp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/access.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/mysql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/mysql.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/study-mark.md" beforeDir="false" afterPath="$PROJECT_DIR$/study-mark.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +114,7 @@
       <workItem from="1647656015191" duration="2498000" />
       <workItem from="1647869856539" duration="265000" />
       <workItem from="1648109051798" duration="19328000" />
-      <workItem from="1648696062164" duration="15732000" />
+      <workItem from="1648696062164" duration="17318000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -309,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648820677593</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat: 新增mysql防止sql注入安全 escape">
+      <created>1648822709549</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1648822709549</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +354,8 @@
     <MESSAGE value="feat: 更新文档" />
     <MESSAGE value="feat: 更新stream" />
     <MESSAGE value="feat: 新增日志功能 logs readline" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增日志功能 logs readline" />
+    <MESSAGE value="feat: 新增mysql防止sql注入安全 escape" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增mysql防止sql注入安全 escape" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
