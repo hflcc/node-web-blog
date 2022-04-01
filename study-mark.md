@@ -54,5 +54,12 @@ I/O性能瓶颈,使用stream提高性能
     通过node自带readline逐行读取
 }
 
+
+6.安全 (web server nodeJS层面的安全)
+* sql注入: 窃取数据库内容 -- 使用mysql的escape函数处理输入内容即可
+* XSS(Cross-Site Scripting)跨站点脚本攻击: 窃取前端的cookie内容或session_id等信息
+* CSRF(Cross-Site Request Forgery)跨站点请求伪造,但实际并不能拿到用户的cookie
+* 密码加密: 保障用户信息安全 (重要!)
+
     
 

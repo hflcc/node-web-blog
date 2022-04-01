@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/2022-04-01.access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/event.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/copy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/logs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/readline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/mysql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/mysql.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/study-mark.md" beforeDir="false" afterPath="$PROJECT_DIR$/study-mark.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile-file/file1.js" beforeDir="false" afterPath="$PROJECT_DIR$/testFile-file/file1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +118,7 @@
       <workItem from="1647656015191" duration="2498000" />
       <workItem from="1647869856539" duration="265000" />
       <workItem from="1648109051798" duration="19328000" />
-      <workItem from="1648696062164" duration="14033000" />
+      <workItem from="1648696062164" duration="15732000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -305,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648795068966</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feat: 新增日志功能 logs readline">
+      <created>1648820677593</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1648820677593</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +350,8 @@
     <MESSAGE value="feat: 新增redis缓存" />
     <MESSAGE value="feat: 更新文档" />
     <MESSAGE value="feat: 更新stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 更新stream" />
+    <MESSAGE value="feat: 新增日志功能 logs readline" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增日志功能 logs readline" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

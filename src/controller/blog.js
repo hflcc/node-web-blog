@@ -1,6 +1,4 @@
-const { exec } = require('../db/mysql');
-const sqlString = require('sqlstring');
-const escape = str => sqlString.escape(str);
+const { exec, escape } = require('../db/mysql');
 
 // 获取博客列表数据
 const getBlogList = (author, keyword) => {
