@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-mark.md" beforeDir="false" afterPath="$PROJECT_DIR$/study-mark.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +112,7 @@
       <workItem from="1647656015191" duration="2498000" />
       <workItem from="1647869856539" duration="265000" />
       <workItem from="1648109051798" duration="19328000" />
+      <workItem from="1648696062164" duration="2482000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -274,13 +275,29 @@
       <option name="project" value="LOCAL" />
       <updated>1648521286806</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: 新增redis缓存">
+      <created>1648567721210</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1648567721210</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -303,7 +320,8 @@
     <MESSAGE value="feat: 更新接口" />
     <MESSAGE value="feat: 新增cookie" />
     <MESSAGE value="feat: 新增redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增redis" />
+    <MESSAGE value="feat: 新增redis缓存" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增redis缓存" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

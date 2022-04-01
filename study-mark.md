@@ -40,3 +40,10 @@ redis-cli
 停止nginx -s stop
 ```
 
+5.后台日志
+    a.访问日志 (server端最重要的日志)
+    b.自定义日志 (包括自定义时间/错误记录)
+通过nodejs文件操作,nodejs stream
+日志要存储到文件中,不能存到redis(内存贵成本高)和mysql(需要表结构)
+    
+
