@@ -11,10 +11,15 @@ const file1 = path.resolve(__dirname, './data-bak.txt');
 	}
 	console.log(data.toString());
 });*/
-// 读取文件,并将文件写到另外一个文件中
+// 读取文件,并将文件拷贝到另外一个文件中
 const readStream = fs.createReadStream(file);
 const writeStream = fs.createWriteStream(file1);
 readStream.pipe(writeStream);
+readStream.pipe(writeStream); // 相当于下面这行;
+// readStream.on('data', chunk => {
+// 	console.log('chunk', chunk.toString());
+// });
+
 readStream.on('end', () => {
 	console.log('传输完成');
 });

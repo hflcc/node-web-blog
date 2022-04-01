@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="842d4e1c-0b18-43c8-8ce2-0c166d68ce4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test-stream/test1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFile-file/data-bak.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-04-01.access.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/access.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/event.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/copy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/logs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/readline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-mark.md" beforeDir="false" afterPath="$PROJECT_DIR$/study-mark.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFile-file/file1.js" beforeDir="false" afterPath="$PROJECT_DIR$/testFile-file/file1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +80,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/bin" />
     </key>
   </component>
@@ -113,7 +121,7 @@
       <workItem from="1647656015191" duration="2498000" />
       <workItem from="1647869856539" duration="265000" />
       <workItem from="1648109051798" duration="19328000" />
-      <workItem from="1648696062164" duration="4190000" />
+      <workItem from="1648696062164" duration="14033000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1645024691901</created>
@@ -290,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648781935223</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="feat: 更新stream">
+      <created>1648795068966</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1648795068966</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +345,8 @@
     <MESSAGE value="feat: 新增redis" />
     <MESSAGE value="feat: 新增redis缓存" />
     <MESSAGE value="feat: 更新文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 更新文档" />
+    <MESSAGE value="feat: 更新stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 更新stream" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

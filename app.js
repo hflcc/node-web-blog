@@ -3,6 +3,7 @@ const { createUuid } = require('./src/utils/tools');
 const { handleBlogRouter } = require('./src/router/blog');
 const { handleUserRouter } = require('./src/router/user');
 const { redisGet, redisSet } = require('./src/db/redis');
+const { createAccessLog } = require('./src/utils/logs');
 
 // 处理post请求
 const getPostData = (req) => {
@@ -42,6 +43,9 @@ const getCookieExpires = () => {
 };
 
 const serverHandler = async (req, res) => {
+	// 创建访问日志
+	createAccessLog(`${req.method} -- ${req.url} -- ${req.headers['user-agent']} -- ${Date.now()}`);
+
 	res.setHeader('Content-Type', 'application/json');
 
 	const url = req.url;

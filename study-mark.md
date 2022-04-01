@@ -45,5 +45,14 @@ redis-cli
     b.自定义日志 (包括自定义时间/错误记录)
 通过nodejs文件操作,nodejs stream
 日志要存储到文件中,不能存到redis(内存贵成本高)和mysql(需要表结构)
+I/O性能瓶颈,使用stream提高性能
+日志拆分 {
+    按时间划分日志文件
+    实现方式: linux(centos,ubuntu)的crontab命令,即定时任务
+}
+日志分析 {
+    通过node自带readline逐行读取
+}
+
     
 
